@@ -1,0 +1,109 @@
+/* GENERAL SETTINGS */
+*, *::after , *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  color: black;
+  font-family: sans-serif monospace;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+/* SIDE BAR LEFT HEADER + SEARCHBAR */
+.left_bar {
+  min-width: 450px;
+  height: auto;
+  border: 3px solid black;
+}
+.left_header {
+  display: flex;
+  min-width: 150px;
+  height: 80px;
+  background-color: lightblue;
+}
+.left_header_img > img {
+  width: 80px;
+  height: 70px;
+  border-radius: 50%;
+  display: block;
+}
+.left_header_icons {
+  display: flex;
+  align-items: center;
+  margin-left: 60%;
+}
+.left_header_icons > i {
+  padding-right: 35px;
+  font-size: 25px;
+}
+/* SEARCHBAR */
+.left_bar_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+  padding: 10px;
+}
+.left_bar_search > i {
+  font-size: 20px;
+  position: absolute;
+  left: 1%;
+  z-index: 1; /*non so se serviva qua z index*/
+}
+.input_searchbar {
+  padding: 10px;
+  padding-left: 30px;
+  width: 100%;
+}
+/* CONTACT LIST  */
+.left_bar_contact_list {
+  height: auto;
+  background-color: #dee6f2
+}
+.imgcontact {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.contact:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.contact_left {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_right {
+  line-height: 2;
+  border-bottom: 1px solid #47341a;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+.contact_info {
+  padding: 10px;
+}
+.contact_name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.last_time {
+  margin-left: auto;
+  font-size: 10px;
+  color: green;
+}
+.last_msg {
+  font-size: 15px;
+}
