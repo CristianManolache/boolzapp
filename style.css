@@ -40,6 +40,7 @@ body {
   margin-left: 60%;
 }
 .left_header_icons > i {
+  cursor: pointer;
   padding-right: 35px;
   font-size: 25px;
 }
@@ -61,12 +62,22 @@ body {
   padding: 10px;
   padding-left: 30px;
   width: 100%;
+  border-radius: 30px;
+  border: none;
 }
 /* CONTACT LIST  */
 .left_bar_contact_list {
   height: auto;
   background-color: #fefefe;
-  overflow-y: hidden;
+}
+.left_bar_contact_list::-webkit-scrollbar {
+  width: 10px;
+}
+.left_bar_contact_list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.left_bar_contact_list::-webkit-scrollbar-thumb {
+  background: #cecece;
 }
 .imgcontact {
   width: 80px;
@@ -79,11 +90,12 @@ body {
   margin-left: 10px;
 }
 .contact:hover {
-  background-color: white;
+  background-color: #cecece;
+  background-size: cover;
   cursor: pointer;
+  border-radius: 30px;
 }
 .contact_left {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,8 +103,6 @@ body {
 .contact_right {
   line-height: 2;
   border-bottom: 1px solid #47341a;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
 }
 .contact_info {
   padding: 10px;
@@ -140,7 +150,9 @@ body {
 .icons i {
   padding: 10px;
   font-size: 25px;
+  cursor: pointer;
 }
+
 /* MESSAGE BODY */
 .message_body {
   background-image: url("img/background.jpg");
@@ -149,11 +161,41 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px 60px;
-  overflow-y: auto;
+}
+.message_body::-webkit-scrollbar {
+  width: 20px;
+}
+.message_body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.message_body::-webkit-scrollbar-thumb {
+  background: #cecece;
 }
 /* FOOTER */
 .footer {
-  background-color: #cecece; 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #cecece;
   width: 100%;
-  height: 150px;
+  height: 80px;
+}
+.footer i {
+  padding: 10px;
+  font-size: 20px;
+}
+.fa-paper-plane:hover {
+  color: green;
+  transform: scale(2);
+  transition-duration: 1s;
+  cursor: pointer;
+}
+.fa-smile {
+  cursor: pointer;
+}
+.footer_input {
+  width: 80%;
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
 }
